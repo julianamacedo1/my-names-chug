@@ -1,8 +1,9 @@
 import React from "react"
 import "./App.css"
-import "./image/rand"
 
-export
+class RandDrink extends React.Component {
+
+}
 
 export default class App extends React.Component {
     render() {
