@@ -12,7 +12,13 @@ class RandDrink extends React.Component {
     handleChange = event => {
         const { name, value } = event.target;
         this.setState({ [name]: value });
-      }
+    }
+    handleClick = () => {
+        let randomNumber = Math.floor(
+          Math.random() * this.state.allDrinkImgs.length
+        )
+        this.setState({ randomImg: this.state.allMemeImgs[randomNumber].url })
+    }
 }
 
 export default class App extends React.Component {
