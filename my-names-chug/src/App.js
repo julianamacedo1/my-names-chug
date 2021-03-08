@@ -9,6 +9,10 @@ class RandDrink extends React.Component {
             allDrinkImgs: []
         }
     }
+    handleChange = event => {
+        const { name, value } = event.target;
+        this.setState({ [name]: value });
+      }
 }
 
 export default class App extends React.Component {
