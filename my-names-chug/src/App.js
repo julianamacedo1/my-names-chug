@@ -4,6 +4,6 @@ import "./image/rand"
 
 export default class App extends React.Component {
     render() {
-        return 
+        return <RandDrink></RandDrink>
     }
 } 
