@@ -24,8 +24,8 @@ class RandDrink extends React.Component {
     fetch("./image/rand")
       .then(data => data.json())
       .then(response => {
-        const { memes } = response.data;
-        this.setState({ allMemeImgs: memes });
+        const { drinks } = response.data;
+        this.setState({ allDrinkImgs: drinks });
       });
   }
 }
