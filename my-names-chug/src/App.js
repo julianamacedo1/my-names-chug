@@ -31,7 +31,7 @@ class RandDrink extends React.Component {
     render() {
         return (
             
-        )
+        );
     }
 }
 
