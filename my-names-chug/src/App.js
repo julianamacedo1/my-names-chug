@@ -13,7 +13,7 @@ class RandDrink extends React.Component {
         let randomNumber = Math.floor(
             Math.random() * this.state.allDrinkImgs.length
         )
-        this.setState({ randomImg: this.state.allDrinkImgs[randomNumber] })
+        this.setState({ randomImg: this.state.allDrinkImgs[randomNumber].src })
     }
     
     render() {
