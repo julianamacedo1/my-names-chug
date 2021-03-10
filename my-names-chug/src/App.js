@@ -20,7 +20,7 @@ class RandDrink extends React.Component {
         let randomNumber = Math.floor(
             Math.random() * this.state.allDrinkImgs.length
         );
-        this.setState({ randomImg: this.state.allDrinkImgs[randomNumber].url })
+        this.setState({ randomImg: this.state.allDrinkImgs[randomNumber] })
     };
     increaseFont = () => {};
     componentDidMount() {
