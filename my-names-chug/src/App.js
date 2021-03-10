@@ -24,7 +24,7 @@ class RandDrink extends React.Component {
         return (
             <>
             <img ></img>
-            <button></button>
+            <button ></button>
             </>
         );
     }
