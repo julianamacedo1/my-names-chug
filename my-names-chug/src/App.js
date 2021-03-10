@@ -33,7 +33,49 @@ class RandDrink extends React.Component {
     }
     render() {
         return (
-            
+            <div>
+        <div className="meme-form">
+          <input
+            type="text"
+            name="topText"
+            placeholder="top text"
+            onChange={this.handleChange}
+            value={this.state.topText}
+          />
+          <br />
+          <input
+            type="text"
+            name="bottomText"
+            placeholder="bottom text"
+            onChange={this.handleChange}
+            value={this.state.bottomText}
+          />
+          <br />
+          <input
+            type="number"
+            name="font_size"
+            placeholder="font size"
+            onChange={this.handleChange}
+            value={this.state.font_size}
+          />
+          <button onClick={this.handleClick}>Generate!</button>
+        </div>
+        <div className="meme">
+          <h2
+            style={{ fontSize: Number(this.state.font_size) }}
+            className="top"
+          >
+            {this.state.topText}
+          </h2>
+          <img src={this.state.randomImg} alt="" />
+          <h2
+            style={{ fontSize: Number(this.state.font_size) }}
+            className="bottom"
+          >
+            {this.state.bottomText}
+          </h2>
+        </div>
+      </div>
         );
     }
 }
