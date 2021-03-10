@@ -21,7 +21,7 @@ class RandDrink extends React.Component {
     };
     increaseFont = () => {};
     componentDidMount() {
-    fetch("https://api.imgflip.com/get_memes")
+    fetch("./image/rand")
       .then(data => data.json())
       .then(response => {
         const { memes } = response.data;
