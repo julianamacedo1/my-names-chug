@@ -27,7 +27,8 @@ class RandDrink extends React.Component {
         const { drinks } = response.data;
         this.setState({ allDrinkImgs: drinks });
       });
-  }
+    }
+    
 }
 
 export default class App extends React.Component {
