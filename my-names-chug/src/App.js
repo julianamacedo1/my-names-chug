@@ -7,19 +7,19 @@ class RandDrink extends React.Component {
         this.state = {
             randomImg: "./image/rand",
             allDrinkImgs: []
-        };
+        }
     }
     handleChange = event => {
-        const { name, value } = event.target;
-        this.setState({ [name]: value });
-    };
+        const { name, value } = event.target
+        this.setState({ [name]: value })
+    }
     handleClick = () => {
         let randomNumber = Math.floor(
             Math.random() * this.state.allDrinkImgs.length
-        );
+        )
         this.setState({ randomImg: this.state.allDrinkImgs[randomNumber].url })
-    };
-    increaseFont = () => {};
+    }
+    increaseFont = () => {}
     componentDidMount() {
     fetch("./image/rand")
       .then(data => data.json())
