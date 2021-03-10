@@ -23,7 +23,7 @@ class RandDrink extends React.Component {
     render() {
         return (
             <>
-            <button onClick={() => this.handleClick}>generate</button>
+            <button onClick={() => this.handleChange}>generate</button>
             </>
         );
     }
