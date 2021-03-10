@@ -5,6 +5,9 @@ class RandDrink extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
+            font_size: "22",
+            topText: "",
+            bottomText: "",
             randomImg: "./image/rand",
             allDrinkImgs: []
         };
