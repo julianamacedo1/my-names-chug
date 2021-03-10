@@ -1,6 +1,6 @@
 import React from "react"
 import "./App.css"
-
+import "./image/rand"
 
 class RandDrink extends React.Component {
     constructor(props) {
