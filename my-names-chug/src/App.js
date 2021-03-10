@@ -15,10 +15,10 @@ class RandDrink extends React.Component {
     };
     handleClick = () => {
         let randomNumber = Math.floor(
-          Math.random() * this.state.allDrinkImgs.length
-        )
+            Math.random() * this.state.allDrinkImgs.length
+        );
         this.setState({ randomImg: this.state.allDrinkImgs[randomNumber].url })
-    }
+    };
 }
 
 export default class App extends React.Component {
