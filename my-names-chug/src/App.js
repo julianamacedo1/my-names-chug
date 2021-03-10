@@ -19,6 +19,15 @@ class RandDrink extends React.Component {
         );
         this.setState({ randomImg: this.state.allDrinkImgs[randomNumber].url })
     };
+    increaseFont = () => {};
+    componentDidMount() {
+    fetch("https://api.imgflip.com/get_memes")
+      .then(data => data.json())
+      .then(response => {
+        const { memes } = response.data;
+        this.setState({ allMemeImgs: memes });
+      });
+  }
 }
 
 export default class App extends React.Component {
