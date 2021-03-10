@@ -19,15 +19,7 @@ class RandDrink extends React.Component {
         )
         this.setState({ randomImg: this.state.allDrinkImgs[randomNumber].url })
     }
-    increaseFont = () => {}
-    componentDidMount() {
-    fetch("./image/rand")
-      .then(data => data.json())
-      .then(response => {
-        const { drinks } = response.data;
-        this.setState({ allDrinkImgs: drinks });
-      });
-    }
+    
     render() {
         return (
             
