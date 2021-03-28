@@ -6,7 +6,7 @@ function Drink() {
     const [url, setUrl] = useState('')
 
     function fetch_data() {
-        fetch('./images').then(res => {
+        fetch('./images/jpg').then(res => {
             if (res.ok) {
                 return res.json();
             }
@@ -22,7 +22,7 @@ function Drink() {
 
     return (
         <div>
-            <img src={'./images'} alt={'drink'}></img>
+            <img src={url} alt={'drink'}></img>
             <button onClick={fetch_data}>generate</button>
         </div>
     )
