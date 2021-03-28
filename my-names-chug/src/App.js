@@ -22,7 +22,7 @@ function Drink() {
 
     return (
         <div>
-            <img src={url} alt={'drink'}></img>
+            <img src={'./images'} alt={'drink'}></img>
             <button onClick={fetch_data}>generate</button>
         </div>
     )
