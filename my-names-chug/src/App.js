@@ -13,7 +13,11 @@ function Drink() {
             throw new Error('Request Failed');
 
             }, networkError => console.log(networkError.message)
-        ).then
+        ).then(
+            jsonRes => {
+                
+            }
+        )
     }
 
 }
