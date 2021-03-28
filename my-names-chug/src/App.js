@@ -7,7 +7,7 @@ class RandDrink extends React.Component {
     var rImage = this.rImages[randomInt]
 
     handleClick = () => {
-        
+        this.rImages = [require('random/image1.png'),require('random/image2.png'), ... etc]
     }
     
     render() {
