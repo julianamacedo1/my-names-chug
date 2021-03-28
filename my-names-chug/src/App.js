@@ -3,15 +3,10 @@ import "./App.css"
 
 class RandDrink extends React.Component {
     
-    handleClick = () => {
-
-    }
-    
     render() {
+        
         return (
-            <>
-            <button onClick={() => this.handleClick}>generate!</button>
-            </>
+            
         );
     }
 }
