@@ -3,10 +3,10 @@ import "./App.css"
 
 class RandDrink extends React.Component {
     
-    
+    var 
 
     handleClick = () => {
-        this.
+        
     }
     
     render() {
