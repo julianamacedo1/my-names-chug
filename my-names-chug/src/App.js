@@ -10,6 +10,8 @@ function Drink() {
             if (res.ok) {
                 return res.json();
             }
+            throw new Error('Request Failed');
+            
         }
     }
 
