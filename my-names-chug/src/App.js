@@ -6,7 +6,7 @@ function Drink() {
     const [url, setUrl] = useState('')
 
     function fetch_data() {
-        
+        fetch('./components')
     }
 
 }
