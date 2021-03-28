@@ -4,11 +4,10 @@ import "./App.css"
 class RandDrink extends React.Component {
     
     render() {
-
-        this.rImages = [require('./components/images')]
-
         return (
-            
+            <>
+            <button onClick={() => this.handleClick}>generate!</button>
+            </>
         );
     }
 }
