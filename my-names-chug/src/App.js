@@ -6,7 +6,7 @@ function Drink() {
     const [url, setUrl] = useState('')
 
     function fetch_data() {
-        fetch('./images/jpg').then(res => {
+        fetch('./images').then(res => {
             if (res.ok) {
                 return res.json();
             }
