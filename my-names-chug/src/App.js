@@ -3,12 +3,8 @@ import "./App.css"
 
 class RandDrink extends React.Component {
     
-    
-
     handleClick = () => {
-        var randomInt = Math.floor(Math.random() * this.rImages.length)
-        var rImages = this.rImages[randomInt]
-        this.rImages = [require('./components/images')]
+
     }
     
     render() {
