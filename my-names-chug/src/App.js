@@ -15,9 +15,11 @@ function Drink() {
             }, networkError => console.log(networkError.message)
         ).then(
             jsonRes => {
-                
+                setUrl(jsonRes[0].url)
             }
         )
     }
+
+    retirn 
 
 }
