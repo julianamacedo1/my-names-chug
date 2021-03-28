@@ -6,7 +6,7 @@ function Drink() {
     const [url, setUrl] = useState('')
 
     function fetch_data() {
-        fetch('./images').then(res => {
+        fetch('./images/bacardi(30).jpg').then(res => {
             if (res.ok) {
                 return res.json();
             }
