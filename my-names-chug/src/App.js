@@ -20,6 +20,13 @@ function Drink() {
         )
     }
 
-    retirn 
+    return (
+        <div>
+            <img src={url}></img>
+            <button onClick={fetch_data}>generate</button>
+        </div>
+    )
 
 }
+
+export default Drink
