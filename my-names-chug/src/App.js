@@ -3,7 +3,7 @@ import "./App.css"
 
 function Drink() {
 
-    const [url, setUrl] = useState('')
+    const [url, setUrl] = useState(null)
 
     function fetch_data() {
         fetch('https://ibb.co/album/Nn2QBW').then(res => {
