@@ -11,8 +11,7 @@ function Drink() {
                 return res.json();
             }
             throw new Error('Request Failed');
-
-            }, networkError => console.log(networkError.message)
+        }, networkError => console.log(networkError.message)
         ).then(
             jsonRes => {
                 setUrl(jsonRes[0].url)
