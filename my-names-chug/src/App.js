@@ -6,7 +6,7 @@ function Drink() {
     const [url, setUrl] = useState('')
 
     function fetch_data() {
-        fetch('https://i.ibb.co/RBFfRSc/bacardi-30.jpg').then(res => {
+        fetch('https://ibb.co/album/Nn2QBW').then(res => {
             if (res.ok) {
                 return res.json();
             }
