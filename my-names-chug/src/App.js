@@ -14,8 +14,8 @@ function Drink() {
 
             }, networkError => console.log(networkError.message)
         ).then(
-            fetch => {
-                setUrl(fetch[0].url)
+            jsonRes => {
+                setUrl(jsonRes[0].url)
             }
         )
     }
